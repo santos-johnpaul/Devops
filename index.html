@@ -10,7 +10,7 @@
 
     <div class="navbar">
         <!-- Updated logo with an image -->
-        <div class="logo"><img src="photo/logos.gif" alt="Logo"></div>
+        <div class="logo">Team <span class="logo-highlight">CV</span></div>
         <div class="nav-links">
             <a href="index.html">Home</a>
             <a href="jpResume.html">John Paul Santos</a>
@@ -20,11 +20,13 @@
     </div>
 
     <div class="content">
-        <h1>Welcome to our Team CV Page!</h1>
+        <h1>Welcome to our Team CV</h1>
 
         <!-- Team Member 1 -->
         <div class="team-member">
-            <img src="photo/jp.jpg" alt="John Paul Santos">
+            <div class="profile-picture">
+                <img class="circular-image" src="photo/jp.jpg" alt="John Paul Santos">
+            </div>
             <h2>John Paul Santos</h2>
             <p>Position: Web Developer</p>
             <p>Experience: 5 years</p>
@@ -34,7 +36,9 @@
 
         <!-- Team Member 2 -->
         <div class="team-member">
-            <img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/321489281_1267303103836757_6242516764246184166_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeF0leM0WpUDWqXd9lFQnjccF6VQk3v2_4sXpVCTe_b_i3cz7g6Wm--16QP0KzQ9gUJlONwDjMuuqSm7qbJ8AuAT&_nc_ohc=HoFzZrENshwAX952TtI&_nc_ht=scontent.fmnl4-6.fna&oh=00_AfC8GAiED0tuAieuy04Qjl3f3oK9QVZVjbla1o8w5R07qA&oe=65B4E29C" alt="Santiago Quiambao III">
+            <div class="profile-picture">
+                <img class="circular-image" src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t39.30808-6/321489281_1267303103836757_6242516764246184166_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeF0leM0WpUDWqXd9lFQnjccF6VQk3v2_4sXpVCTe_b_i3cz7g6Wm--16QP0KzQ9gUJlONwDjMuuqSm7qbJ8AuAT&_nc_ohc=HoFzZrENshwAX952TtI&_nc_ht=scontent.fmnl4-6.fna&oh=00_AfC8GAiED0tuAieuy04Qjl3f3oK9QVZVjbla1o8w5R07qA&oe=65B4E29C" alt="Santiago Quiambao III">
+            </div>
             <h2>Santiago Quiambao III</h2>
             <p>Position: Graphic Designer</p>
             <p>Experience: 3 years</p>
@@ -48,11 +52,15 @@
 
 
 
+
 <style>
+/* Add these styles to your existing styles.css file */
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2; /* Set the background color */
 }
 
 .navbar {
@@ -99,6 +107,7 @@ body {
       margin: 10px 0;
   }
 }
+
 /* Add these styles to your existing styles.css file */
 
 .team-member {
@@ -114,4 +123,51 @@ body {
 .team-member p {
   margin: 5px 0;
   color: #777;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.logo-highlight {
+  color: #ffcc00; /* Highlight color for the logo */
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  padding: 15px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc00; /* Change the color on hover */
+}
+
+/* Add these styles to your existing styles.css file */
+
+.profile-picture {
+  width: 100px; /* Set the width of the circular image */
+  height: 100px; /* Set the height of the circular image */
+  overflow: hidden;
+  border-radius: 50%; /* Create a circular shape */
+  margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.circular-image {
+  width: 100%; /* Make the image fill the container */
+  height: auto;
+  display: block;
+  border-radius: 50%; /* Ensure the image remains circular */
 }
